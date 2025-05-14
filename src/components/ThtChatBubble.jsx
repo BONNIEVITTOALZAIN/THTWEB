@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import ICON from '../assets/icon-bot.png';
 
 const ThtChatBubble = () => {
   const options = [
@@ -57,7 +58,7 @@ const ThtChatBubble = () => {
     <div className="flex flex-col h-full">
       {/* Header */}
       <div className="flex items-center gap-3 p-4 border-b">
-        <img src="/src/assets/icon-bot.png" alt="THT Assistant" className="w-10 h-10 rounded-full" />
+        <img src={ICON} alt="THT Assistant" className="w-10 h-10 rounded-full" />
         <div>
           <h2 className="text-lg font-semibold text-gray-800">THT Assistant</h2>
           <p className="text-sm text-gray-500">Asisten Pintar Konsultasi Penyakit THT</p>
