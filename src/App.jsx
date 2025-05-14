@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Logo from './assets/logo.png';
 import './App.css';
 import DiagnosaPage from './Page/DiagnosaPage';
+import ThtChatBubble from './components/ThtChatBubble';
+import FloatingChatButton from './components/FloatingChat';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -16,6 +18,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
+  const [chatVisible, setChatVisible] = useState(false);
 
   return (
     <Router>
@@ -255,6 +258,7 @@ function App() {
           </div>
         </footer>
       </div>
+      <FloatingChatButton/>
     </Router>
   );
 }

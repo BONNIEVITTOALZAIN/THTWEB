@@ -45,7 +45,7 @@ export const gejalaPenyakit = {
   20: [0, 1, 3, 4, 7, 8, 10, 17],     // SINUSITIS FRONTALIS
   21: [0, 1, 3, 4, 7, 8, 10, 17, 25, 26], // SINUSITIS ETMOIDALIS
   22: [0, 1, 3, 4, 5, 7, 8, 10, 11],      // SINUSITIS SFENOIDALIS
-  23: [0, 1, 2, 3]         // PERUT (mungkin placeholder / dummy)
+  23: [0, 1, 2, 3]         // PERUT 
 };
 
 // Fungsi utama untuk menghitung diagnosa berdasarkan inputan gejala (selected)
