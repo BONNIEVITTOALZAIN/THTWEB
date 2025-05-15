@@ -70,7 +70,7 @@ export function hitungDiagnosa(selected) {
       // Hitung dan simpan persentase kecocokan terhadap total gejala penyakit tersebut
       persentaseDiagnosa.push({
         id: parseInt(id),
-        persen: Math.round((cocok / gejala.length) * 100),
+        persen: Math.round((cocok / selected.length) * 100),
         cocok, // jumlah gejala yang cocok
         total: gejala.length // total gejala penyakit
       });
